@@ -1,6 +1,7 @@
 {
   "name": "nextjs-portfolio",
   "private": true,
+  "homepage": "http://dchiang.github.io/nextjs-portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
