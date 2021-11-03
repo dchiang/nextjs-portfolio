@@ -4,8 +4,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "yarn build && yarn export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "12.0.2",
@@ -14,6 +17,8 @@
   },
   "devDependencies": {
     "eslint": "7",
-    "eslint-config-next": "12.0.2"
-  }
+    "eslint-config-next": "12.0.2",
+    "gh-pages": "^3.2.3"
+  },
+  "packageManager": "yarn@3.1.0"
 }
