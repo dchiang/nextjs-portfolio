@@ -60,7 +60,7 @@ export default function Home() {
           Powered by{" "}
           <span className={styles.logo}>
             <img
-              src="./pictures/vercel.svg"
+              src={require("../public/pictures/vercel.svg")}
               alt="Vercel Logo"
               width={72}
               height={16}
