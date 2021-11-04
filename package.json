@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "yarn build && yarn export",
-    "deploy": "gh-pages -d out"
+    "deploy": "yarn predeploy && gh-pages -d out"
   },
   "dependencies": {
     "imagemin-gifsicle": "^7.0.0",
