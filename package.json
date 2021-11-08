@@ -12,22 +12,33 @@
     "deploy": "yarn predeploy && gh-pages -d out"
   },
   "dependencies": {
+    "axios": "^0.24.0",
+    "bulma": "^0.9.3",
+    "image-trace-loader": "^1.0.2",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.0",
     "next": "12.0.2",
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
+    "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "responsive-loader": "2.0.0",
+    "sass": "^1.43.4",
     "sharp": "^0.29.2",
+    "svg-sprite-loader": "^6.0.11",
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
+    "coa": "^2.0.2",
     "eslint": "7",
     "eslint-config-next": "12.0.2",
     "gh-pages": "^3.2.3"
+  },
+  "resolutions": {
+    "coa": "2.0.2"
   },
   "packageManager": "yarn@3.1.0"
 }

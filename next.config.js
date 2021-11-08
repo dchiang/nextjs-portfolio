@@ -16,8 +16,19 @@ const definePrefix = () => {
   return prefix;
 };
 
+const definePublicPath = () => {
+  let publicPath = "";
+  if (ON_GITHUB_PAGES) {
+    publicPath = "/nextjs-portfolio/_next/static/images/";
+  } else {
+    publicPath = "./_next/static/images/";
+  }
+  return publicPath;
+};
+
 const basePath = ON_GITHUB_PAGES || prod ? "/nextjs-portfolio" : "";
 const assetPrefix = definePrefix();
+const imagesPublicPath = definePublicPath();
 const nextConfig = {
   basePath,
   assetPrefix,
@@ -36,9 +47,14 @@ module.exports = withPlugins([
         strip: true,
         verbose: true,
       },
-      imagesPublicPath: "/nextjs-portfolio/_next/static/images/",
+      imagesPublicPath: imagesPublicPath,
+      optimizeImagesInDev: true,
+      svgo: {},
+      responseive: true,
+      optimizeImages: true,
     },
   ],
+  //transpileModules,
   nextConfig,
 ]);
 
