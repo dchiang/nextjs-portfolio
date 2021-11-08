@@ -8,8 +8,8 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "yarn build && yarn export",
-    "deploy": "yarn predeploy && gh-pages -d out"
+    "predeploy": "yarn build && yarn export && touch out/.nojekyll",
+    "deploy": "yarn predeploy && gh-pages -d out -t true"
   },
   "dependencies": {
     "axios": "^0.24.0",
