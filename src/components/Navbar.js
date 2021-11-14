@@ -33,7 +33,9 @@ const Navbar = (props) => {
       <div className="navbar-brand">
         <a className="navbar-item" href="https://dchiang.github.io">
           <img
-            src="https://bulma.io/images/bulma-logo.png"
+            src={require(`../../public/pictures/portfolio-logos/Portfolio-${
+              !toggle ? "" : "Light-"
+            }logo.svg`)}
             width="112"
             height="28"
             alt="https://dchiang.github.io"

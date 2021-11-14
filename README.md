@@ -32,3 +32,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Legal Disclaimer
+
+The portfolio logo was created using the [Adobe Logo Maker](https://spark.adobe.com/express-apps/logo-maker/) which used the [image](https://thenounproject.com/term/portfolio/704510) provided by the user [Hare Krishna](https://thenounproject.com/aathis/) under the terms of [Creative Commons Public License Attribution 3.0 United States](https://creativecommons.org/licenses/by/3.0/us/legalcode)
