@@ -1,6 +1,32 @@
+import { useState } from "react";
+import ThemeTogglerButton from "./ThemeTogglerButton";
+
 const Navbar = (props) => {
+  const [navbarState, setNavbarState] = useState("");
+  const [dropdownState, setDropdownState] = useState("is-hidden-mobile");
+
+  const handleDropdownState = (event) => {
+    let newState = "is-hidden-mobile";
+    if (dropdownState !== "") {
+      newState = "";
+    }
+    setDropdownState(newState);
+  };
+
+  const handleNavbarState = (event) => {
+    let newState = "";
+    if (navbarState === "") {
+      newState = "is-active";
+    }
+    setNavbarState(newState);
+  };
+
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav
+      className={`navbar is-fixed-top is-${props.theme}`}
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div className="navbar-brand">
         <a className="navbar-item" href="https://dchiang.github.io">
           <img
@@ -13,10 +39,11 @@ const Navbar = (props) => {
 
         <a
           role="button"
-          className="navbar-burger"
+          className={`navbar-burger ${navbarState}`}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
+          onClick={handleNavbarState}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -24,19 +51,18 @@ const Navbar = (props) => {
         </a>
       </div>
 
-      <div id="navbarBasicExample" className="navbar-menu">
+      <div id="navbarBasicExample" className={`navbar-menu ${navbarState}`}>
         <div className="navbar-start">
-          <a className="navbar-item">Home</a>
-
-          <a className="navbar-item">Documentation</a>
+          <a className="navbar-item">Experience</a>
+          <a className="navbar-item">Projects</a>
+          <a className="navbar-item">About</a>
 
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">More</a>
-
-            <div className="navbar-dropdown">
-              <a className="navbar-item">About</a>
-              <a className="navbar-item">Jobs</a>
-              <a className="navbar-item">Contact</a>
+            <a className="navbar-link" onClick={handleDropdownState}>
+              More
+            </a>
+            <div className={`navbar-dropdown ${dropdownState}`}>
+              <a className="navbar-item">Leave your feedback</a>
               <hr className="navbar-divider" />
               <a className="navbar-item">Report an issue</a>
             </div>
@@ -44,28 +70,22 @@ const Navbar = (props) => {
         </div>
 
         <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
-              <a
-                className="button is-primary"
-                href="https://github.com/dchiang"
-              >
-                <img
-                  src={require("../public/pictures/GitHub-Mark/PNG/GitHub-Mark-120px-plus.svg")}
-                  alt="https://github.com/dchiang"
-                ></img>
-              </a>
-              <a
-                className="button is-light"
-                href="https://www.linkedin.com/in/daniel-chiang-guerrero/"
-              >
-                <img
-                  src={require("../public/pictures/LinkedIn-Logos/LI-In-Bug.svg")}
-                  alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
-                ></img>
-              </a>
-            </div>
-          </div>
+          <a className="navbar-item" href="https://github.com/dchiang">
+            <img
+              src={require("../public/pictures/GitHub-Mark/PNG/GitHub-Mark-120px-plus.svg")}
+              alt="https://github.com/dchiang"
+            />
+          </a>
+          <a
+            className="navbar-item"
+            href="https://www.linkedin.com/in/daniel-chiang-guerrero/"
+          >
+            <img
+              src={require("../public/pictures/LinkedIn-Logos/LI-In-Bug.svg")}
+              alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
+            />
+          </a>
+          <ThemeTogglerButton className="navbar-item" />
         </div>
       </div>
     </nav>
