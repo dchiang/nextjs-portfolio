@@ -1,6 +1,5 @@
 import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 
 const Header = (props) => {
   return (

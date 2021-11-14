@@ -72,7 +72,7 @@ const Navbar = (props) => {
         <div className="navbar-end">
           <a className="navbar-item" href="https://github.com/dchiang">
             <img
-              src={require("../public/pictures/GitHub-Mark/PNG/GitHub-Mark-120px-plus.svg")}
+              src={require("../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-120px-plus.svg")}
               alt="https://github.com/dchiang"
             />
           </a>
@@ -81,7 +81,7 @@ const Navbar = (props) => {
             href="https://www.linkedin.com/in/daniel-chiang-guerrero/"
           >
             <img
-              src={require("../public/pictures/LinkedIn-Logos/LI-In-Bug.svg")}
+              src={require("../../public/pictures/LinkedIn-Logos/LI-In-Bug.svg")}
               alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
             />
           </a>

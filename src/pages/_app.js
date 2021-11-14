@@ -1,6 +1,6 @@
-import "../styles/globals.css";
-import "../styles/general.scss";
-import "../styles/ToogleButton.css";
+import "../../styles/globals.css";
+import "../../styles/general.scss";
+import "../../styles/ToogleButton.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 

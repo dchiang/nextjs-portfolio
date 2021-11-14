@@ -1,8 +1,7 @@
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
-import { useState } from "react";
 
 export default function Home() {
   return (

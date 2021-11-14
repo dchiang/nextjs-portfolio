@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 
 const Footer = (props) => {
   return (
@@ -11,7 +11,7 @@ const Footer = (props) => {
         Powered by{" "}
         <span className={styles.logo}>
           <img
-            src={require("../public/pictures/vercel.svg")}
+            src={require("../../public/pictures/vercel.svg")}
             alt="Vercel Logo"
             width={72}
             height={16}
