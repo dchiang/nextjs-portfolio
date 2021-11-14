@@ -1,6 +1,9 @@
 import ToggleButton from "./ToogleButton";
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from "react";
 
 const ThemeTooglerButton = (props) => {
+  const { toggle, toggleFunction } = useContext(ThemeContext);
   const background = "is-dark";
   const iconStyle = {
     color: "Yellow",
@@ -21,12 +24,11 @@ const ThemeTooglerButton = (props) => {
         },
       };
 
-  const handleClick = () => {};
   return (
     <ToggleButton
       defaultChecked={false}
       style={style}
-      onChange={handleClick}
+      onChange={toggleFunction}
       className={props.className}
     />
   );

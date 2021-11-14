@@ -9,6 +9,7 @@ const ToogleButton = (props) => {
 
   const handleChange = (event) => {
     setState(!state);
+    props.onChange();
   };
 
   return (
