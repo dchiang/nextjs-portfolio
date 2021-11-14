@@ -1,7 +1,10 @@
 import { useState } from "react";
 import ThemeTogglerButton from "./ThemeTogglerButton";
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from "react";
 
 const Navbar = (props) => {
+  const { toggle } = useContext(ThemeContext);
   const [navbarState, setNavbarState] = useState("");
   const [dropdownState, setDropdownState] = useState("is-hidden-mobile");
 
@@ -23,7 +26,7 @@ const Navbar = (props) => {
 
   return (
     <nav
-      className={`navbar is-fixed-top is-${props.theme}`}
+      className={`navbar is-fixed-top is-${!toggle ? "white" : "dark"}`}
       role="navigation"
       aria-label="main navigation"
     >
@@ -72,7 +75,9 @@ const Navbar = (props) => {
         <div className="navbar-end">
           <a className="navbar-item" href="https://github.com/dchiang">
             <img
-              src={require("../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-120px-plus.svg")}
+              src={require(`../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-${
+                !toggle ? "" : "Light-"
+              }120px-plus.svg`)}
               alt="https://github.com/dchiang"
             />
           </a>

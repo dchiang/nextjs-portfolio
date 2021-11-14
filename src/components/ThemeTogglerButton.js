@@ -3,7 +3,7 @@ import { ThemeContext } from "../context/ThemeContext";
 import { useContext } from "react";
 
 const ThemeTooglerButton = (props) => {
-  const { toggle, toggleFunction } = useContext(ThemeContext);
+  const { toggleFunction } = useContext(ThemeContext);
   const background = "is-dark";
   const iconStyle = {
     color: "Yellow",
