@@ -86,7 +86,9 @@ const Navbar = (props) => {
             href="https://www.linkedin.com/in/daniel-chiang-guerrero/"
           >
             <img
-              src={require("../../public/pictures/LinkedIn-Logos/LI-In-Bug.svg")}
+              src={require(`../../public/pictures/LinkedIn-Logos/LI-In-${
+                !toggle ? "" : "Light-"
+              }Bug.svg`)}
               alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
             />
           </a>

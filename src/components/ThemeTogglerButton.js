@@ -5,9 +5,6 @@ import { useContext } from "react";
 const ThemeTooglerButton = (props) => {
   const { toggleFunction } = useContext(ThemeContext);
   const background = "is-dark";
-  const iconStyle = {
-    color: "Yellow",
-  };
 
   const style = props.style
     ? props.style
@@ -15,12 +12,16 @@ const ThemeTooglerButton = (props) => {
         checked: {
           icon: "moon",
           background: background,
-          iconStyle: iconStyle,
+          iconStyle: {
+            color: "White",
+          },
         },
         unchecked: {
           icon: "sun",
           background: background,
-          iconStyle: iconStyle,
+          iconStyle: {
+            color: "Yellow",
+          },
         },
       };
 
