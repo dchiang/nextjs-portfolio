@@ -3,20 +3,13 @@ import styles from "../../styles/Home.module.css";
 const Footer = (props) => {
   return (
     <footer className={styles.footer}>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{" "}
-        <span className={styles.logo}>
-          <img
-            src={require("../../public/pictures/vercel.svg")}
-            alt="Vercel Logo"
-            width={72}
-            height={16}
-          />
-        </span>
+      <a href="https://bulma.io">
+        <img
+          src="https://bulma.io/images/made-with-bulma.png"
+          alt="Made with Bulma"
+          width="256"
+          height="48"
+        />
       </a>
     </footer>
   );
