@@ -2,3 +2,34 @@ $navbar-item-hover-background-color: hsl(180, 68%, 46%);
 $navbar-dropdown-item-hover-background-color: hsl(180, 68%, 46%);
 
 @import "~bulma/bulma";
+
+@include from($navbar-breakpoint) {
+  .bd-navbar {
+    .navbar-menu,
+    .navbar-start,
+    .navbar-end {
+      align-items: center;
+    }
+  }
+
+  .bd-navbar-mobile-icon {
+    display: none;
+  }
+
+  .bd-navbar-dropdown {
+    left: auto;
+    right: 0;
+    width: 16rem;
+    z-index: 200;
+
+    .navbar-item {
+      white-space: normal;
+    }
+  }
+}
+
+@include until($fullhd) {
+  .bd-navbar-icon {
+    display: none;
+  }
+}

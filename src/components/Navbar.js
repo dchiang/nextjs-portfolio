@@ -41,7 +41,29 @@ const Navbar = (props) => {
             alt="https://dchiang.github.io"
           />
         </a>
-
+        <a
+          className="navbar-item bd-navbar-mobile-icon"
+          href="https://github.com/dchiang"
+        >
+          <img
+            src={require(`../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-${
+              !toggle ? "" : "Light-"
+            }120px-plus.svg`)}
+            alt="https://github.com/dchiang"
+          />
+        </a>
+        <a
+          className="navbar-item bd-navbar-mobile-icon"
+          href="https://www.linkedin.com/in/daniel-chiang-guerrero/"
+        >
+          <img
+            src={require(`../../public/pictures/LinkedIn-Logos/LI-In-${
+              !toggle ? "" : "Light-"
+            }Bug.svg`)}
+            alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
+          />
+        </a>
+        <ThemeTogglerButton className="navbar-item bd-navbar-mobile-icon" />
         <a
           role="button"
           className={`navbar-burger ${navbarState}`}
@@ -109,7 +131,10 @@ const Navbar = (props) => {
         </div>
 
         <div className="navbar-end">
-          <a className="navbar-item" href="https://github.com/dchiang">
+          <a
+            className="navbar-item bd-navbar-icon"
+            href="https://github.com/dchiang"
+          >
             <img
               src={require(`../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-${
                 !toggle ? "" : "Light-"
@@ -118,7 +143,7 @@ const Navbar = (props) => {
             />
           </a>
           <a
-            className="navbar-item"
+            className="navbar-item bd-navbar-icon"
             href="https://www.linkedin.com/in/daniel-chiang-guerrero/"
           >
             <img
@@ -128,7 +153,7 @@ const Navbar = (props) => {
               alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
             />
           </a>
-          <ThemeTogglerButton className="navbar-item" />
+          <ThemeTogglerButton className="navbar-item bd-navbar-icon" />
         </div>
       </div>
     </nav>
