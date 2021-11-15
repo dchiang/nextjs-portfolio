@@ -56,20 +56,54 @@ const Navbar = (props) => {
         </a>
       </div>
 
-      <div id="navbarBasicExample" className={`navbar-menu ${navbarState}`}>
+      <div
+        id="navbarBasicExample"
+        className={`navbar-menu ${navbarState} ${
+          !toggle ? "" : "has-background-dark"
+        }`}
+      >
         <div className="navbar-start">
-          <a className="navbar-item">Experience</a>
-          <a className="navbar-item">Projects</a>
-          <a className="navbar-item">About</a>
+          <a className={`navbar-item ${!toggle ? "" : "has-text-white-ter"}`}>
+            Experience
+          </a>
+          <a className={`navbar-item ${!toggle ? "" : "has-text-white-ter"}`}>
+            Projects
+          </a>
+          <a className={`navbar-item ${!toggle ? "" : "has-text-white-ter"}`}>
+            About
+          </a>
 
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link" onClick={handleDropdownState}>
+            <a
+              className={`navbar-link ${!toggle ? "" : "has-text-white-ter"}`}
+              onClick={handleDropdownState}
+            >
               More
             </a>
-            <div className={`navbar-dropdown ${dropdownState}`}>
-              <a className="navbar-item">Leave your feedback</a>
-              <hr className="navbar-divider" />
-              <a className="navbar-item">Report an issue</a>
+            <div
+              className={`navbar-dropdown ${dropdownState} ${
+                !toggle ? "" : "has-background-dark"
+              }`}
+            >
+              <a
+                className={`navbar-item ${
+                  !toggle ? "" : "has-text-white-ter navbar-dropdown-dark"
+                }`}
+              >
+                Leave your feedback
+              </a>
+              <hr
+                className={`navbar-divider ${
+                  !toggle ? "" : "has-background-white-ter"
+                }`}
+              />
+              <a
+                className={`navbar-item ${
+                  !toggle ? "" : "has-text-white-ter navbar-dropdown-dark"
+                }`}
+              >
+                Report an issue
+              </a>
             </div>
           </div>
         </div>
