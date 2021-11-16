@@ -12,7 +12,9 @@ export default function Home() {
         <meta name="description" content="Portfolio developed using next js" />
         <link rel="icon" href="../pictures/favicon.ico" />
       </Head>
-      <Layout></Layout>
+      <Layout>
+        <Header />
+      </Layout>
       <Footer />
     </section>
   );
