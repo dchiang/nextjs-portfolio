@@ -9,7 +9,7 @@ const Header = (props) => {
           <div className="columns">
             <div className="column is-two-fifths has-text-right has-text-centered-mobile">
               <img
-                src="../pictures/Daniel.jpg"
+                src={require(`../../public/pictures/Daniel.svg`)}
                 alt="Daniel Chiang Guerrero"
                 width="200"
                 height="200"
