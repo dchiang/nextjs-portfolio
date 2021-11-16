@@ -1,10 +1,19 @@
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from "react";
+
 const Header = (props) => {
+  const { toggle } = useContext(ThemeContext);
+
   return (
     <section>
       <section className="hero is-small">
         <div className="hero-body"></div>
       </section>
-      <section className="hero is-medium is-link">
+      <section
+        className={`hero is-medium ${
+          !toggle ? "is-link" : "has-background-black-ter has-text-white-ter"
+        }`}
+      >
         <div className="hero-body">
           <div className="columns">
             <div className="column is-two-fifths has-text-right has-text-centered-mobile">
@@ -16,8 +25,10 @@ const Header = (props) => {
               />
             </div>
             <div className="column">
-              <p className="title">Daniel Chiang Guerrero</p>
-              <p className="subtitle mb-3">Full Stack Developer</p>
+              <p className="title has-text-white-ter">Daniel Chiang Guerrero</p>
+              <p className="subtitle mb-3 has-text-white-ter">
+                Full Stack Developer
+              </p>
               <p className="block">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
