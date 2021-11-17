@@ -24,9 +24,11 @@ const Header = (props) => {
                 height="200"
               />
             </div>
-            <div className="column has-text-white-ter has-text-justified">
-              <p className="title">Daniel Chiang Guerrero</p>
-              <p className="subtitle mb-3 ">Full Stack Developer</p>
+            <div className="column has-text-justified">
+              <p className="title has-text-white-ter">Daniel Chiang Guerrero</p>
+              <p className="subtitle mb-3 has-text-white-ter">
+                Full Stack Developer
+              </p>
               <p className="block">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
