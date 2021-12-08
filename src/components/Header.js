@@ -16,7 +16,7 @@ const Header = (props) => {
       >
         <div className="hero-body">
           <div className="columns">
-            <div className="column is-two-fifths has-text-right has-text-centered-mobile">
+            <div className="column is-one-third has-text-right has-text-centered-mobile">
               <img
                 src={require(`../../public/pictures/Daniel.svg`)}
                 alt="Daniel Chiang Guerrero"
@@ -24,19 +24,18 @@ const Header = (props) => {
                 height="200"
               />
             </div>
-            <div className="column has-text-justified">
+            <div className="column is-three-fifths">
               <p className="title has-text-white-ter">Daniel Chiang Guerrero</p>
               <p className="subtitle mb-3 has-text-white-ter">
                 Full Stack Developer
               </p>
-              <p className="block">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p className="block has-text-justified">
+                I am a Computer Science Engineer with 10 years of experience in
+                the Software industry, mostly leading development teams, working
+                with SCRUM methodology, taking care of customer relationship and
+                designing software solutions. I am looking for an opportunity to
+                get back to development in order to sharp my skills while
+                learning new technology stacks.
               </p>
             </div>
           </div>
