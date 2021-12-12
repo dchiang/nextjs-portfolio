@@ -1,0 +1,7 @@
+.carouselArrowLight::before {
+  color: hsl(217, 71%, 53%) !important;
+}
+
+.carouselArrowDark::before {
+  color: hsl(0, 0%, 100%) !important;
+}
