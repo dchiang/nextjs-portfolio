@@ -54,7 +54,6 @@ module.exports = withPlugins([
       optimizeImages: true,
     },
   ],
-  //transpileModules,
   nextConfig,
 ]);
 
