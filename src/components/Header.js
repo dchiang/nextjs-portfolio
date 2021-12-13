@@ -34,7 +34,7 @@ const Header = (props) => {
                 the Software industry, mostly leading development teams, working
                 with SCRUM methodology, taking care of customer relationship and
                 designing software solutions. I am looking for an opportunity to
-                get back to development in order to sharp my skills while
+                get back to development in order to sharp my coding skills while
                 learning new technology stacks.
               </p>
             </div>
