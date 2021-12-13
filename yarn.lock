@@ -2085,6 +2085,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chart.js@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "chart.js@npm:3.6.2"
+  checksum: 0883adced890eb0ee77a8374e6f89412a82df694f25767a5b14a200735922adf6521366a1419a24025e53203ea00ed70ba1dfc86e2f030c9ef183c6909f9dbdd
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:3.5.1":
   version: 3.5.1
   resolution: "chokidar@npm:3.5.1"
@@ -6537,6 +6544,7 @@ __metadata:
     "@fortawesome/react-fontawesome": ^0.1.16
     axios: ^0.24.0
     bulma: ^0.9.3
+    chart.js: ^3.6.2
     coa: 2.0.2
     eslint: 7
     eslint-config-next: 12.0.2
@@ -6551,6 +6559,7 @@ __metadata:
     next-optimized-images: ^2.6.2
     next-transpile-modules: ^9.0.0
     react: 17.0.2
+    react-chartjs-2: ^4.0.0
     react-dom: 17.0.2
     react-slick: ^0.28.1
     react-toggle: ^4.1.2
@@ -7760,6 +7769,16 @@ __metadata:
   bin:
     rc: ./cli.js
   checksum: 2e26e052f8be2abd64e6d1dabfbd7be03f80ec18ccbc49562d31f617d0015fbdbcf0f9eed30346ea6ab789e0fdfe4337f033f8016efdbee0df5354751842080e
+  languageName: node
+  linkType: hard
+
+"react-chartjs-2@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "react-chartjs-2@npm:4.0.0"
+  peerDependencies:
+    chart.js: ^3.5.0
+    react: ^16.8.0 || ^17.0.0
+  checksum: 25998a4cc14910641c1184245c6672211d436877a456c70fa16bf67e2b470e7899cef578618fd8842a7d25103a973f25c7f7ec01200fdcbe1b04913fabb87650
   languageName: node
   linkType: hard
 
