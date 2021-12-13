@@ -14,7 +14,7 @@ const Skills = (props) => {
     })
   );
 
-  const style = { height: "20em", width: "20em" };
+  const style = { height: "25em", width: "20em" };
 
   return (
     <div style={{ paddingLeft: "2rem" }}>
