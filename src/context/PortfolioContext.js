@@ -1,7 +1,8 @@
 import { useState, createContext } from "react";
-import githubPortfolio from "../../profile";
+import { githubPortfolio } from "../../profile";
+import axios from "axios";
 
-const PortfolioContext = createContext(false);
+const PortfolioContext = createContext(githubPortfolio);
 
 const PortfolioProvider = (props) => {
   const [portfolio, setPortfolio] = useState(githubPortfolio);
