@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import NavbarIcon from "./NavbarIcon";
 import ThemeTogglerButton from "./ThemeTogglerButton";
 import { ThemeContext } from "../context/ThemeContext";
 import { PortfolioContext } from "../context/PortfolioContext";
@@ -37,38 +38,32 @@ const Navbar = (props) => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a className="navbar-item" href={portfolio.profile.websiteUrl}>
-          <img
-            src={require(`../../public/pictures/portfolio-logos/Portfolio-${
-              !toggle ? "" : "Light-"
-            }logo.svg`)}
-            width="112"
-            height="28"
-            alt={portfolio.profile.websiteUrl}
-          />
-        </a>
-        <a
+        <NavbarIcon
+          className="navbar-item"
+          href={portfolio.profile.websiteUrl}
+          src={require(`../../public/pictures/portfolio-logos/Portfolio-${
+            !toggle ? "" : "Light-"
+          }logo.svg`)}
+          width="112"
+          height="28"
+          alt={portfolio.profile.websiteUrl}
+        />
+        <NavbarIcon
           className="navbar-item bd-navbar-mobile-icon"
           href={portfolio.profile.url}
-        >
-          <img
-            src={require(`../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-${
-              !toggle ? "" : "Light-"
-            }120px-plus.svg`)}
-            alt={portfolio.profile.url}
-          />
-        </a>
-        <a
+          src={require(`../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-${
+            !toggle ? "" : "Light-"
+          }120px-plus.svg`)}
+          alt={portfolio.profile.url}
+        />
+        <NavbarIcon
           className="navbar-item bd-navbar-mobile-icon"
           href="https://www.linkedin.com/in/daniel-chiang-guerrero/"
-        >
-          <img
-            src={require(`../../public/pictures/LinkedIn-Logos/LI-In-${
-              !toggle ? "" : "Light-"
-            }Bug.svg`)}
-            alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
-          />
-        </a>
+          src={require(`../../public/pictures/LinkedIn-Logos/LI-In-${
+            !toggle ? "" : "Light-"
+          }Bug.svg`)}
+          alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
+        />
         <ThemeTogglerButton className="navbar-item bd-navbar-mobile-icon" />
         <a
           role="button"
@@ -137,28 +132,22 @@ const Navbar = (props) => {
         </div>
 
         <div className="navbar-end">
-          <a
+          <NavbarIcon
             className="navbar-item bd-navbar-icon"
             href={portfolio.profile.url}
-          >
-            <img
-              src={require(`../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-${
-                !toggle ? "" : "Light-"
-              }120px-plus.svg`)}
-              alt={portfolio.profile.url}
-            />
-          </a>
-          <a
+            src={require(`../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-${
+              !toggle ? "" : "Light-"
+            }120px-plus.svg`)}
+            alt={portfolio.profile.url}
+          />
+          <NavbarIcon
             className="navbar-item bd-navbar-icon"
             href="https://www.linkedin.com/in/daniel-chiang-guerrero/"
-          >
-            <img
-              src={require(`../../public/pictures/LinkedIn-Logos/LI-In-${
-                !toggle ? "" : "Light-"
-              }Bug.svg`)}
-              alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
-            />
-          </a>
+            src={require(`../../public/pictures/LinkedIn-Logos/LI-In-${
+              !toggle ? "" : "Light-"
+            }Bug.svg`)}
+            alt="https://www.linkedin.com/in/daniel-chiang-guerrero/"
+          />
           <ThemeTogglerButton className="navbar-item bd-navbar-icon" />
         </div>
       </div>
