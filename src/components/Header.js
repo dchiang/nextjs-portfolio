@@ -1,9 +1,12 @@
 import { ThemeContext } from "../context/ThemeContext";
+import { PortfolioContext } from "../context/PortfolioContext";
 import { useContext } from "react";
+import Location from "./Location";
 
 const Header = (props) => {
   const { toggle } = useContext(ThemeContext);
-
+  const { portfolio } = useContext(PortfolioContext);
+  const ic = { icon: "moon" };
   return (
     <section>
       <section className="hero is-small">
@@ -18,7 +21,7 @@ const Header = (props) => {
           <div className="columns">
             <div className="column is-one-third has-text-right has-text-centered-mobile">
               <img
-                src={require(`../../public/pictures/Daniel.svg`)}
+                src={portfolio.profile.avatarUrl}
                 alt="Daniel Chiang Guerrero"
                 width="200"
                 height="200"
@@ -26,10 +29,10 @@ const Header = (props) => {
             </div>
             <div className="column is-three-fifths">
               <p className="title has-text-white-ter">Daniel Chiang Guerrero</p>
-              <p className="subtitle mb-3 has-text-white-ter">
+              <p className="subtitle is-4 mb-2 has-text-white-ter">
                 Full Stack Developer
               </p>
-              <p className="block has-text-justified">
+              <p className="block has-text-justified mb-1">
                 I am a Computer Science Engineer with 10 years of experience in
                 the Software industry, mostly leading development teams, working
                 with SCRUM methodology, taking care of customer relationship and
@@ -37,6 +40,7 @@ const Header = (props) => {
                 get back to development in order to sharp my coding skills while
                 learning new technology stacks.
               </p>
+              <Location />
             </div>
           </div>
         </div>
