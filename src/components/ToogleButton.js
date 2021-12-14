@@ -1,6 +1,10 @@
 import Toggle from "react-toggle";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+
+library.add(faSun, faMoon);
 
 const ToogleButton = (props) => {
   const [state, setState] = useState(false);
