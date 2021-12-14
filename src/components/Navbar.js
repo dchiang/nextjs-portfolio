@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ThemeTogglerButton from "./ThemeTogglerButton";
 import { ThemeContext } from "../context/ThemeContext";
+import { PortfolioContext } from "../context/PortfolioContext";
 import { useContext } from "react";
 
 const Navbar = (props) => {
   const { toggle } = useContext(ThemeContext);
+  const { portfolio, getPortfolio } = useContext(PortfolioContext);
   const [navbarState, setNavbarState] = useState("");
   const [dropdownState, setDropdownState] = useState("is-hidden-mobile");
 
@@ -24,6 +26,10 @@ const Navbar = (props) => {
     setNavbarState(newState);
   };
 
+  useEffect(() => {
+    getPortfolio();
+  }, []);
+
   return (
     <nav
       className={`navbar is-fixed-top is-${!toggle ? "white" : "dark"}`}
@@ -31,25 +37,25 @@ const Navbar = (props) => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a className="navbar-item" href="https://dchiang.github.io">
+        <a className="navbar-item" href={portfolio.profile.websiteUrl}>
           <img
             src={require(`../../public/pictures/portfolio-logos/Portfolio-${
               !toggle ? "" : "Light-"
             }logo.svg`)}
             width="112"
             height="28"
-            alt="https://dchiang.github.io"
+            alt={portfolio.profile.websiteUrl}
           />
         </a>
         <a
           className="navbar-item bd-navbar-mobile-icon"
-          href="https://github.com/dchiang"
+          href={portfolio.profile.url}
         >
           <img
             src={require(`../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-${
               !toggle ? "" : "Light-"
             }120px-plus.svg`)}
-            alt="https://github.com/dchiang"
+            alt={portfolio.profile.url}
           />
         </a>
         <a
@@ -133,13 +139,13 @@ const Navbar = (props) => {
         <div className="navbar-end">
           <a
             className="navbar-item bd-navbar-icon"
-            href="https://github.com/dchiang"
+            href={portfolio.profile.url}
           >
             <img
               src={require(`../../public/pictures/GitHub-Mark/PNG/GitHub-Mark-${
                 !toggle ? "" : "Light-"
               }120px-plus.svg`)}
-              alt="https://github.com/dchiang"
+              alt={portfolio.profile.url}
             />
           </a>
           <a
