@@ -2,6 +2,7 @@ import Arrow from "./Arrow";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { slickDots } from "./carousel.module.scss";
 
 const Carousel = (props) => {
   const darkTheme = props.darkTheme != undefined ? props.darkTheme : false;
@@ -10,6 +11,7 @@ const Carousel = (props) => {
       ? props.settings
       : {
           dots: true,
+          dotsClass: `slick-dots ${slickDots}`,
           infinite: true,
           speed: 500,
           slidesToShow: 1,
@@ -29,7 +31,7 @@ const Carousel = (props) => {
   }
 
   return (
-    <div>
+    <div className="pl-4">
       <Slider style={props.style} {...settings}>
         {props.children}
       </Slider>

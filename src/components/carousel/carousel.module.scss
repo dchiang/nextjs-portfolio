@@ -3,5 +3,9 @@
 }
 
 .carouselArrowDark::before {
-  color: hsl(0, 0%, 100%) !important;
+  color: hsl(0, 0%, 14%) !important;
+}
+
+.slickDots {
+  bottom: -10px !important;
 }

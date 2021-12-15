@@ -1,4 +1,4 @@
-import classes from "./carousel.module.css";
+import classes from "./carousel.module.scss";
 
 const Arrow = (props) => {
   const { className, style, onClick } = props;
@@ -8,7 +8,7 @@ const Arrow = (props) => {
 
   return (
     <button
-      className={`${className} ${customClasses}`}
+      className={`${className} ${customClasses} is-hidden-mobile`}
       style={{ ...style, display: "block" }}
       onClick={onClick}
     />
