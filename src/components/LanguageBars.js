@@ -4,7 +4,7 @@ const LanguageBars = (props) => {
       <li key={key}>
         <p>{key}</p>
         <progress
-          className={`progress ${props.darkTheme ? "" : "is-link"}`}
+          className={`progress ${props.darkTheme ? "" : "is-info"}`}
           value={value}
           max="100"
         ></progress>
