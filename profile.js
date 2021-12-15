@@ -16,16 +16,16 @@ export const githubPortfolio = {
       description: null,
       homepageUrl: null,
       name: "nextjs-portfolio",
-      pushedAt: "2021-12-13T10:22:57Z",
+      pushedAt: "2021-12-15T11:43:15Z",
       url: "https://github.com/dchiang/nextjs-portfolio",
       openGraphImageUrl:
         "https://avatars.githubusercontent.com/u/603988?s=400&v=4",
       languages: {
-        totalSize: 21769,
+        totalSize: 28216,
         list: {
-          JavaScript: 16270,
-          CSS: 4865,
-          SCSS: 634,
+          JavaScript: 22467,
+          CSS: 4723,
+          SCSS: 1026,
         },
       },
     },
@@ -96,12 +96,12 @@ export const githubPortfolio = {
   ],
   languages: {
     list: {
-      JavaScript: 28284,
-      CSS: 5853,
-      SCSS: 634,
+      JavaScript: 34481,
+      CSS: 5711,
+      SCSS: 1026,
       Python: 12004,
       HTML: 1989,
     },
-    totalSize: 48764,
+    totalSize: 55211,
   },
 };
