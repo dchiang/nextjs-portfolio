@@ -33,6 +33,7 @@ const nextConfig = {
   basePath,
   assetPrefix,
   reactStrictMode: true,
+  optimizeFonts: false,
 };
 
 module.exports = withPlugins([
