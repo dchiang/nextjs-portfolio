@@ -1,7 +1,7 @@
+import Head from "next/head";
 import Arrow from "./Arrow";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { slickDots } from "./carousel.module.scss";
 
 const Carousel = (props) => {
@@ -32,6 +32,12 @@ const Carousel = (props) => {
 
   return (
     <div className="pl-4">
+      <Head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+          rel="stylesheet"
+        />
+      </Head>
       <Slider style={props.style} {...settings}>
         {props.children}
       </Slider>
