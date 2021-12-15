@@ -15,9 +15,18 @@ const PortfolioProvider = (props) => {
     const endpoint = `${apiUrl}/github-portfolio`;
     const queryParams = `repos-amount=${reposAmount}&languages-amount=${languagesAmount}`;
     const requestUrl = `${endpoint}/${login}?${queryParams}`;
-    axios.get(requestUrl).then((response) => {
-      setPortfolio(response.data);
-    });
+    axios
+      .get(requestUrl)
+      .then((response) => {
+        setPortfolio(response.data);
+      })
+      .catch((err) => {
+        if (err.response) {
+          console.log(JSON.stringify(err.response.data));
+        } else {
+          console.log(JSON.stringify(err));
+        }
+      });
   };
 
   return (
