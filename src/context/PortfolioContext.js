@@ -18,7 +18,9 @@ const PortfolioProvider = (props) => {
     axios
       .get(requestUrl)
       .then((response) => {
-        setPortfolio(response.data);
+        const portfolioResponse = response.data;
+        portfolioResponse.jobs = githubPortfolio.jobs;
+        setPortfolio(portfolioResponse);
       })
       .catch((err) => {
         if (err.response) {

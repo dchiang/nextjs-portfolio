@@ -104,4 +104,42 @@ export const githubPortfolio = {
     },
     totalSize: 55211,
   },
+  jobs: [
+    {
+      title: "Software Architect",
+      when: "Aug 2020 – Sep 2021",
+      duration: "1 yr 2 mos",
+      description: "",
+    },
+    {
+      title: "Software Development Team Leader",
+      when: "Sep 2014 – Aug 2020",
+      duration: "6 yrs",
+      description: "",
+      achievements: [
+        "I led the development and integration team of a project that allowed the client company to increase their monthly sales in $2M.",
+        "To have designed the architecture and led the development and integration team of a system for an Ecuadorian government institution that was presented live by the president of the nation during a national broadcast.",
+        "Reduced the integration time and increased the quality of the code produced by the work teams through implementing continuous integration using GitLab and SonarQube.",
+        "I pacticipated as the technical leader and main developer in the team that won on behalf of the company the innovation challenge proposed by the Ecuadorian Secretary of Education, Science, Technology and Innovation in the fourth edition of Campus Party Quito held in September 2014.",
+      ],
+    },
+    {
+      title: "Senior Software Developer",
+      when: "Feb 2014 – Aug 2014",
+      duration: "7 mos",
+      description: "",
+      achievements: [
+        "Using my spare time to automate the configuration process of new web services over one of the platforms of our client, reducing the time required for this task by 90% and favoring the use of a standard naming convention which also reduced the tablespace requiered to store the required configurations by reusing them.",
+      ],
+    },
+    {
+      title: "Junior Software Developer",
+      when: "May 2011 – Oct 2012",
+      duration: "1 yr 6 mos",
+      description: "",
+      achievements: [
+        "Recognition of my ability to self-manage and level of commitment by my immediate boss that led the company to give me autonomy to handle the clients and their needs.",
+      ],
+    },
+  ],
 };
