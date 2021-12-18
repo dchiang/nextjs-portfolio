@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Header />
         <div className="columns mt-4">
           <Skills className="column is-3 is-offset-1 has-border-1" />
+          <Experience className="column is-7 ml-4 pl-4 has-border-1" />
         </div>
       </Layout>
       <Footer />
