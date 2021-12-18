@@ -4,11 +4,8 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Skills from "../components/Skills";
-import { PortfolioContext } from "../context/PortfolioContext";
-import { useContext } from "react";
 
 export default function Home() {
-  const { portfolio } = useContext(PortfolioContext);
   return (
     <section>
       <Head>
@@ -19,10 +16,7 @@ export default function Home() {
       <Layout>
         <Header />
         <div className="columns mt-4">
-          <Skills
-            className="column is-3 is-offset-1 has-border-1"
-            languagesUsed={portfolio.languages}
-          />
+          <Skills className="column is-3 is-offset-1 has-border-1" />
         </div>
       </Layout>
       <Footer />
