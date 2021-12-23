@@ -26,7 +26,7 @@ const Legend = (props) => {
       return legendList;
     };
     setLegends(getLegends);
-  }, []);
+  }, [bars]);
 
   return (
     <div className="content">
