@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <Skills className="column is-3 is-offset-1 has-border-1" />
           <Experience className="column is-7 ml-4 pl-4 has-border-1" />
         </div>
+        <Projects className="mt-4" />
       </Layout>
       <Footer />
     </section>
