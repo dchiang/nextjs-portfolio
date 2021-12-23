@@ -4,26 +4,6 @@ import classes from "./legend.module.scss";
 const Legend = (props) => {
   const [legends, setLegends] = useState([]);
   const bars = props.bars;
-  //   const bars = [
-  //     {
-  //       name: "HTML",
-  //       size: 4.21,
-  //       backgroundClass: "has-background-white",
-  //       backgroundColor: "",
-  //     },
-  //     {
-  //       name: "CSS",
-  //       size: 10.94,
-  //       backgroundClass: "has-background-warning",
-  //       backgroundColor: "",
-  //     },
-  //     {
-  //       name: "JavaScript",
-  //       size: 84.85,
-  //       backgroundClass: "has-background-dark",
-  //       backgroundColor: "yellow !important",
-  //     },
-  //   ];
 
   useEffect(() => {
     const getLegends = () => {

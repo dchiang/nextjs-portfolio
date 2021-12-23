@@ -2,26 +2,6 @@ import Legend from "./Legend";
 
 const MultipleBars = (props) => {
   const bars = props.bars;
-  // const bars = [
-  //   {
-  //     name: "HTML",
-  //     size: 4.21,
-  //     backgroundClass: "has-background-white",
-  //     backgroundColor: "",
-  //   },
-  //   {
-  //     name: "CSS",
-  //     size: 10.94,
-  //     backgroundClass: "has-background-warning",
-  //     backgroundColor: "",
-  //   },
-  //   {
-  //     name: "JavaScript",
-  //     size: 84.85,
-  //     backgroundClass: "has-background-dark",
-  //     backgroundColor: "yellow !important",
-  //   },
-  // ];
 
   const barStyle = (bar) => {
     let style = {

@@ -2,24 +2,6 @@ import MultipleBars from "./MultipleBars/MultipleBars";
 
 const Repository = (props) => {
   const repository = props.repository;
-  // const repository = {
-  //   description:
-  //     "A simple implementation using React of the traditional guessing game Hangman",
-  //   homepageUrl: "https://dchiang.github.io/react-hangman",
-  //   name: "react-hangman",
-  //   pushedAt: "2021-11-02T12:57:34Z",
-  //   url: "https://github.com/dchiang/react-hangman",
-  //   openGraphImageUrl:
-  //     "https://repository-images.githubusercontent.com/414398809/4094eb83-d355-4b07-a85e-1c528e970e64",
-  //   languages: {
-  //     totalSize: 8500,
-  //     list: {
-  //       HTML: 358,
-  //       CSS: 930,
-  //       JavaScript: 7212,
-  //     },
-  //   },
-  // };
 
   const backgroundThemeClasses = {
     dark: [
