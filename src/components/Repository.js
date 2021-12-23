@@ -64,7 +64,9 @@ const Repository = (props) => {
             }`}
           >
             <div className="container">
-              <h6 className="title is-4">{repository.name}</h6>
+              <h6 className="title is-4 has-text-white-ter">
+                {repository.name}
+              </h6>
               <p>{repository.description}</p> <a>@bulmaio</a>.
               <a href="#">#css</a>
               <a href="#">#responsive</a>
