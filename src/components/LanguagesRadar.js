@@ -22,22 +22,22 @@ const LanguagesRadar = (props) => {
   let dataset = {
     labels: [],
     values: [],
+    pointColor: [],
   };
   let backgroundColor = "hsla(217, 71%, 53%, 0.2)";
   let borderColor = "hsl(217, 71%, 53%)";
-  let pointBackgroundColor = "hsl(217, 71%, 53%)";
   let pointHoverBorderColor = "hsl(217, 71%, 53%)";
 
   if (props.darkTheme) {
     backgroundColor = "hsla(0, 0%, 14%, 0.2)";
     borderColor = "hsl(0, 0%, 14%)";
-    pointBackgroundColor = "hsl(0, 0%, 14%)";
     pointHoverBorderColor = "hsl(0, 0%, 14%)";
   }
 
   for (const index in props.data) {
     dataset.labels = dataset.labels.concat(props.data[index].name);
     dataset.values = dataset.values.concat(props.data[index].value);
+    dataset.pointColor = dataset.pointColor.concat(props.data[index].color);
   }
 
   const data = {
@@ -48,9 +48,9 @@ const LanguagesRadar = (props) => {
         data: dataset.values,
         backgroundColor: backgroundColor,
         borderColor: borderColor,
-        pointBackgroundColor: pointBackgroundColor,
-        pointBorderColor: "#fff",
-        pointHoverBackgroundColor: "#fff",
+        pointBackgroundColor: dataset.pointColor,
+        pointBorderColor: "#000",
+        pointHoverBackgroundColor: dataset.pointColor,
         pointHoverBorderColor: pointHoverBorderColor,
         borderWidth: 1,
       },
