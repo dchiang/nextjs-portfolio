@@ -7,16 +7,14 @@ const MultipleBars = (props) => {
     let style = {
       width: `${bar.size}%`,
       minHeight: props.height,
+      backgroundColor: bar.backgroundColor,
     };
-    if (bar.backgroundColor) {
-      style.backgroundColor = bar.backgroundColor;
-    }
     return style;
   };
   return (
     <div className={props.className}>
       <div
-        className="level progress is-mobile mb-0"
+        className="level progress is-mobile mb-1"
         style={{ maxWidth: "100%" }}
       >
         {bars.map((bar, index) => {
@@ -24,9 +22,7 @@ const MultipleBars = (props) => {
             <div
               key={index}
               id={`bar${index}`}
-              className={`level-item mr-0 ${
-                bar.backgroundColor ? "" : bar.backgroundClass
-              }`}
+              className="level-item mr-0"
               style={barStyle(bar)}
             ></div>
           );
