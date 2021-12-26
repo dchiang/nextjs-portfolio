@@ -21,12 +21,24 @@ export const githubPortfolio = {
       openGraphImageUrl:
         "https://avatars.githubusercontent.com/u/603988?s=400&v=4",
       languages: {
-        totalSize: 28216,
-        list: {
-          JavaScript: 22467,
-          CSS: 4723,
-          SCSS: 1026,
-        },
+        totalSize: 39072,
+        list: [
+          {
+            name: "JavaScript",
+            size: 33275,
+            color: "#f1e05a",
+          },
+          {
+            name: "CSS",
+            size: 4723,
+            color: "#563d7c",
+          },
+          {
+            name: "SCSS",
+            size: 1074,
+            color: "#c6538c",
+          },
+        ],
       },
     },
     {
@@ -39,9 +51,13 @@ export const githubPortfolio = {
         "https://avatars.githubusercontent.com/u/603988?s=400&v=4",
       languages: {
         totalSize: 12004,
-        list: {
-          Python: 12004,
-        },
+        list: [
+          {
+            name: "Python",
+            size: 12004,
+            color: "#3572A5",
+          },
+        ],
       },
     },
     {
@@ -54,11 +70,23 @@ export const githubPortfolio = {
         "https://avatars.githubusercontent.com/u/603988?s=400&v=4",
       languages: {
         totalSize: 6474,
-        list: {
-          HTML: 1614,
-          JavaScript: 4802,
-          CSS: 58,
-        },
+        list: [
+          {
+            name: "HTML",
+            size: 1614,
+            color: "#e34c26",
+          },
+          {
+            name: "JavaScript",
+            size: 4802,
+            color: "#f1e05a",
+          },
+          {
+            name: "CSS",
+            size: 58,
+            color: "#563d7c",
+          },
+        ],
       },
     },
     {
@@ -71,11 +99,23 @@ export const githubPortfolio = {
         "https://repository-images.githubusercontent.com/414398809/4094eb83-d355-4b07-a85e-1c528e970e64",
       languages: {
         totalSize: 8500,
-        list: {
-          HTML: 358,
-          CSS: 930,
-          JavaScript: 7212,
-        },
+        list: [
+          {
+            name: "HTML",
+            size: 358,
+            color: "#e34c26",
+          },
+          {
+            name: "CSS",
+            size: 930,
+            color: "#563d7c",
+          },
+          {
+            name: "JavaScript",
+            size: 7212,
+            color: "#f1e05a",
+          },
+        ],
       },
     },
     {
@@ -88,21 +128,45 @@ export const githubPortfolio = {
         "https://avatars.githubusercontent.com/u/603988?s=400&v=4",
       languages: {
         totalSize: 17,
-        list: {
-          HTML: 17,
-        },
+        list: [
+          {
+            name: "HTML",
+            size: 17,
+            color: "#e34c26",
+          },
+        ],
       },
     },
   ],
   languages: {
-    list: {
-      JavaScript: 34481,
-      CSS: 5711,
-      SCSS: 1026,
-      Python: 12004,
-      HTML: 1989,
-    },
-    totalSize: 55211,
+    totalSize: 66067,
+    list: [
+      {
+        name: "JavaScript",
+        size: 45289,
+        color: "#f1e05a",
+      },
+      {
+        name: "CSS",
+        size: 5711,
+        color: "#563d7c",
+      },
+      {
+        name: "SCSS",
+        size: 1074,
+        color: "#c6538c",
+      },
+      {
+        name: "Python",
+        size: 12004,
+        color: "#3572A5",
+      },
+      {
+        name: "HTML",
+        size: 1989,
+        color: "#e34c26",
+      },
+    ],
   },
   jobs: [
     {

@@ -3,45 +3,18 @@ import MultipleBars from "./MultipleBars/MultipleBars";
 const Repository = (props) => {
   const repository = props.repository;
 
-  const backgroundThemeClasses = {
-    dark: [
-      "has-background-light",
-      "has-background-primary",
-      "has-background-info",
-      "has-background-grey-light",
-      "has-background-success",
-      "has-background-warning",
-      "has-background-danger",
-      "has-background-link",
-    ],
-    light: [
-      "has-background-light",
-      "has-background-primary",
-      "has-background-dark",
-      "has-background-grey-light",
-      "has-background-success",
-      "has-background-warning",
-      "has-background-danger",
-      "has-background-black",
-    ],
-  };
   const percentage = (amountUsed, totalSize) => {
     const percentage = (100 * amountUsed) / totalSize;
     return percentage.toFixed(2);
   };
 
-  const bars = Object.entries(repository.languages.list).map(
-    ([key, value], index) => {
-      const backgroundClass = props.darkTheme
-        ? backgroundThemeClasses.dark[index]
-        : backgroundThemeClasses.light[index];
-      return {
-        name: key,
-        size: percentage(value, repository.languages.totalSize),
-        backgroundClass: backgroundClass,
-      };
-    }
-  );
+  const languagesBars = repository.languages.list.map((language) => {
+    return {
+      name: language.name,
+      size: percentage(language.size, repository.languages.totalSize),
+      backgroundColor: language.color,
+    };
+  });
   return (
     <div className="tile is-parent is-3">
       <article className="tile is-child box ">
@@ -77,7 +50,7 @@ const Repository = (props) => {
                 className="mt-2"
                 height="1rem"
                 showLegend={true}
-                bars={bars}
+                bars={languagesBars}
               />
             </div>
           </div>

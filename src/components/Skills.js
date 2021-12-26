@@ -1,6 +1,6 @@
 import Carousel from "./carousel/Carousel";
 import LanguagesRadar from "./LanguagesRadar";
-import LanguageBars from "./LanguageBars";
+import LanguageBars from "./LanguageBars/LanguageBars";
 import { ThemeContext } from "../context/ThemeContext";
 import { PortfolioContext } from "../context/PortfolioContext";
 import { useContext } from "react";
@@ -15,12 +15,13 @@ const Skills = (props) => {
     return percentage.toFixed(2);
   };
 
-  const languagesUsed = Object.fromEntries(
-    Object.entries(portfolio.languages.list).map(([key, value]) => {
-      return [key, percentage(value)];
-    })
-  );
-
+  const languagesUsed = portfolio.languages.list.map((language) => {
+    return {
+      name: language.name,
+      value: percentage(language.size),
+      color: language.color,
+    };
+  });
   return (
     <div
       className={`${props.className} has-border-1-${toggle ? "dark" : "light"}`}
@@ -33,7 +34,7 @@ const Skills = (props) => {
       >
         Skills
       </p>
-      <Carousel style={style} darkTheme={toggle}>
+      <Carousel style={style}>
         <div>
           <LanguageBars data={languagesUsed} darkTheme={toggle} />
         </div>

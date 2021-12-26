@@ -19,6 +19,10 @@ ChartJS.register(
 );
 
 const LanguagesRadar = (props) => {
+  let dataset = {
+    labels: [],
+    values: [],
+  };
   let backgroundColor = "hsla(217, 71%, 53%, 0.2)";
   let borderColor = "hsl(217, 71%, 53%)";
   let pointBackgroundColor = "hsl(217, 71%, 53%)";
@@ -31,12 +35,17 @@ const LanguagesRadar = (props) => {
     pointHoverBorderColor = "hsl(0, 0%, 14%)";
   }
 
+  for (const index in props.data) {
+    dataset.labels = dataset.labels.concat(props.data[index].name);
+    dataset.values = dataset.values.concat(props.data[index].value);
+  }
+
   const data = {
-    labels: Object.keys(props.data),
+    labels: dataset.labels,
     datasets: [
       {
         label: "% of use in public repositories",
-        data: Object.values(props.data),
+        data: dataset.values,
         backgroundColor: backgroundColor,
         borderColor: borderColor,
         pointBackgroundColor: pointBackgroundColor,
