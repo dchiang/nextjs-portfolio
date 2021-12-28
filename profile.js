@@ -13,19 +13,19 @@ export const githubPortfolio = {
   },
   repositories: [
     {
-      description: null,
-      homepageUrl: null,
+      description: "My personal portfolio",
+      homepageUrl: "https://dchiang.github.io/nextjs-portfolio",
       name: "nextjs-portfolio",
-      pushedAt: "2021-12-15T11:43:15Z",
+      pushedAt: "2021-12-28T14:42:18Z",
       url: "https://github.com/dchiang/nextjs-portfolio",
       openGraphImageUrl:
-        "https://avatars.githubusercontent.com/u/603988?s=400&v=4",
+        "https://repository-images.githubusercontent.com/424407176/a75cf9fa-6c58-4adf-a654-6bdc45705c53",
       languages: {
-        totalSize: 39072,
+        totalSize: 39309,
         list: [
           {
             name: "JavaScript",
-            size: 33275,
+            size: 33465,
             color: "#f1e05a",
           },
           {
@@ -35,34 +35,35 @@ export const githubPortfolio = {
           },
           {
             name: "SCSS",
-            size: 1074,
+            size: 1121,
             color: "#c6538c",
           },
         ],
       },
     },
     {
-      description: null,
+      description:
+        "An AWS Serverless Application that runs a lambda to fetch my public data from GitHub GraphQL API, apply transformations and return the final result through a custom API",
       homepageUrl: null,
       name: "serverless-github-portfolio-api",
-      pushedAt: "2021-12-08T16:29:48Z",
+      pushedAt: "2021-12-28T14:40:32Z",
       url: "https://github.com/dchiang/serverless-github-portfolio-api",
       openGraphImageUrl:
-        "https://avatars.githubusercontent.com/u/603988?s=400&v=4",
+        "https://repository-images.githubusercontent.com/434798810/1d125d58-aeee-431c-89a0-8be0cd8c9d4e",
       languages: {
-        totalSize: 12004,
+        totalSize: 13311,
         list: [
           {
             name: "Python",
-            size: 12004,
+            size: 13311,
             color: "#3572A5",
           },
         ],
       },
     },
     {
-      description: "Created with CodeSandbox",
-      homepageUrl: "https://codesandbox.io/s/github/dchiang/react-calculator",
+      description: "Simple calculator using React",
+      homepageUrl: "https://dchiang.github.io/react-calculator",
       name: "react-calculator",
       pushedAt: "2021-11-02T23:11:29Z",
       url: "https://github.com/dchiang/react-calculator",
@@ -72,14 +73,14 @@ export const githubPortfolio = {
         totalSize: 6474,
         list: [
           {
-            name: "HTML",
-            size: 1614,
-            color: "#e34c26",
-          },
-          {
             name: "JavaScript",
             size: 4802,
             color: "#f1e05a",
+          },
+          {
+            name: "HTML",
+            size: 1614,
+            color: "#e34c26",
           },
           {
             name: "CSS",
@@ -90,8 +91,9 @@ export const githubPortfolio = {
       },
     },
     {
-      description: null,
-      homepageUrl: null,
+      description:
+        "A simple implementation of the traditional guessing game Hangman using React",
+      homepageUrl: "https://dchiang.github.io/react-hangman",
       name: "react-hangman",
       pushedAt: "2021-11-02T12:57:34Z",
       url: "https://github.com/dchiang/react-hangman",
@@ -101,9 +103,9 @@ export const githubPortfolio = {
         totalSize: 8500,
         list: [
           {
-            name: "HTML",
-            size: 358,
-            color: "#e34c26",
+            name: "JavaScript",
+            size: 7212,
+            color: "#f1e05a",
           },
           {
             name: "CSS",
@@ -111,9 +113,9 @@ export const githubPortfolio = {
             color: "#563d7c",
           },
           {
-            name: "JavaScript",
-            size: 7212,
-            color: "#f1e05a",
+            name: "HTML",
+            size: 358,
+            color: "#e34c26",
           },
         ],
       },
@@ -139,11 +141,11 @@ export const githubPortfolio = {
     },
   ],
   languages: {
-    totalSize: 66067,
+    totalSize: 67611,
     list: [
       {
         name: "JavaScript",
-        size: 45289,
+        size: 45479,
         color: "#f1e05a",
       },
       {
@@ -153,12 +155,12 @@ export const githubPortfolio = {
       },
       {
         name: "SCSS",
-        size: 1074,
+        size: 1121,
         color: "#c6538c",
       },
       {
         name: "Python",
-        size: 12004,
+        size: 13311,
         color: "#3572A5",
       },
       {
