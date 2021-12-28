@@ -40,15 +40,13 @@ const Repository = (props) => {
               <h6 className="title is-4 has-text-white-ter">
                 {repository.name}
               </h6>
-              <p>{repository.description}</p> <a>@bulmaio</a>.
-              <a href="#">#css</a>
-              <a href="#">#responsive</a>
-              <br />
-              {"Last pushed: "}
-              <div>{new Date(repository.pushedAt).toString()}</div>
+              <p>{repository.description}</p>
+              <div>{`Last pushed: ${new Date(
+                repository.pushedAt
+              ).toLocaleDateString()}`}</div>
               <MultipleBars
                 className="mt-2"
-                height="1rem"
+                height="0.5rem"
                 showLegend={true}
                 bars={languagesBars}
               />
