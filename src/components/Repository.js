@@ -15,45 +15,52 @@ const Repository = (props) => {
       backgroundColor: language.color,
     };
   });
+  const getLinkUrl = () => {
+    const homepageUrl = new String(repository.homepageUrl);
+    return homepageUrl.toLowerCase().includes("portfolio") ||
+      homepageUrl == "null"
+      ? ""
+      : `/embeded?page=${repository.homepageUrl}`;
+  };
   return (
     <div className="tile is-parent is-3">
-      <article className="tile is-child box ">
-        <div className="card">
-          <div className="card-image">
-            <a href={repository.homepageUrl}>
+      <a href={getLinkUrl()} className="tile is-child box ">
+        <article>
+          <div className="card">
+            <div className="card-image">
               <figure className="image is-2by1">
                 <img
                   src={repository.openGraphImageUrl}
                   alt={repository.homepageUrl}
                 />
               </figure>
-            </a>
-          </div>
-          <div
-            className={`card-content has-background-${
-              props.darkTheme
-                ? "black-ter has-text-white-ter"
-                : "link has-text-white-ter"
-            }`}
-          >
-            <div className="container">
-              <h6 className="title is-4 has-text-white-ter">
-                {repository.name}
-              </h6>
-              <p>{repository.description}</p>
-              <div>{`Last pushed: ${new Date(
-                repository.pushedAt
-              ).toLocaleDateString()}`}</div>
-              <MultipleBars
-                className="mt-2"
-                height="0.5rem"
-                showLegend={true}
-                bars={languagesBars}
-              />
+            </div>
+            <div
+              className={`card-content has-background-${
+                props.darkTheme
+                  ? "black-ter has-text-white-ter"
+                  : "link has-text-white-ter"
+              }`}
+            >
+              <div className="container">
+                <h6 className="title is-4 has-text-white-ter">
+                  {repository.name}
+                </h6>
+                <p>{repository.description}</p>
+                <div>{`Last pushed: ${new Date(
+                  repository.pushedAt
+                ).toLocaleDateString()}`}</div>
+                <MultipleBars
+                  className="mt-2"
+                  height="0.5rem"
+                  showLegend={true}
+                  bars={languagesBars}
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </a>
     </div>
   );
 };
