@@ -1,10 +1,13 @@
-import Experience from "../components/Experience";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
 const Embeded = () => {
   const router = useRouter();
   const { page } = router.query;
+  const repositoryName = new String(page)
+    .split("/")
+    .filter((e) => e)
+    .slice(-1);
   const style = {
     display: "block",
     width: "100%",
@@ -20,6 +23,7 @@ const Embeded = () => {
           <div className="hero-body"></div>
         </section>
         <iframe
+          key={repositoryName}
           src={page}
           className="m-0"
           style={style}
