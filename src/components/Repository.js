@@ -20,7 +20,7 @@ const Repository = (props) => {
     return homepageUrl.toLowerCase().includes("portfolio") ||
       homepageUrl == "null"
       ? ""
-      : `/embeded?page=${repository.homepageUrl}`;
+      : `/embedded?page=${repository.homepageUrl}`;
   };
   return (
     <div className="tile is-parent is-3">
